@@ -1,22 +1,51 @@
 public class BMICalculator implements Calculator {
 
-    private double[] BMIIndex = new double[]{15,16,18.5,25,30,35,40,45,50,55,60};
+    private double weight;
+    private double height;
+//    private double bmi;
 
-    public BMICalculator() {
-    }
-
-    public BMICalculator(double weight, double height) {
+    public BMICalculator(int weight, int height) {
+        if (weight<=0 || height<=0){throw new IllegalArgumentException();}
+        this.weight = (double)weight;
+        this.height = (double)height / 100;
 
     }
 
     @Override
     public String calculate() {
-
-        return null;
+        Double value = weight / (height * height);
+        String value2 = String.format("%.1f",value);
+//        this.bmi = value;
+        return value2.replaceAll(",",".");
     }
 
     @Override
     public String interpret() {
-        return null;
+        String bmi = calculate();
+        double bmi1=Double.parseDouble(bmi);
+        String result=null;
+
+        double[] BMIIndex = {15, 16, 18.5, 25, 30, 35, 40, 45, 50, 60,175};
+
+        String[] BMILabel = {"Very severely underweight",
+                "Severely underweight",
+                "Underweight",
+                "Normal (healthy weight)",
+                "Overweight",
+                "Obese Class I (Moderately obese)",
+                "Obese Class II (Severely obese)",
+                "Obese Class III (Very severely obese)",
+                "Obese Class IV (Morbidly Obese)",
+                "Obese Class V (Super Obese)",
+                "Obese Class VI (Hyper Obese)"};
+
+        for (int i = 0; i < BMIIndex.length; i++) {
+            if (bmi1 <= BMIIndex[i]) {
+                result = BMILabel[i];
+                break;
+            }
+        }
+        return result;
     }
+
 }
