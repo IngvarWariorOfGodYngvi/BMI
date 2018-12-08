@@ -1,10 +1,9 @@
 
+[
+squid:S106	"9Replace this use of System.out or System.err by a logger.(íëø·üÿÿÿÿ8‹ó¹òø,
 V
-squid:S106"9Replace this use of System.out or System.err by a logger.(ùé¯İ8Íèıîø,
+squid:S106"9Replace this use of System.out or System.err by a logger.(ĞÒ¬é8¡åƒòø,
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(­¢ 8îøüñø,
 [
-squid:S106"9Replace this use of System.out or System.err by a logger.(§ÚÓ“ùÿÿÿÿ8îøüñø,
-[
-squid:S106
-"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¡åƒòø,
-Isquid:S1481"+Remove this unused "weigth" local variable.(§“ÙŞ8¡åƒòø,
-Xsquid:S1854":Remove this useless assignment to local variable "weigth".(§“ÙŞ8¡åƒòø,
+squid:S106"9Replace this use of System.out or System.err by a logger.(ı•¢ÿÿÿÿÿ8Íèıîø,

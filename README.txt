@@ -1,0 +1,1 @@
+This Program count your BMI. It take your weight and height, and return your BMI index with little comment.

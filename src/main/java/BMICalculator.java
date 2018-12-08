@@ -4,10 +4,10 @@ public class BMICalculator implements Calculator {
     private double height;
 //    private double bmi;
 
-    public BMICalculator(int weight, int height) {
+    public BMICalculator(double weight, double height) {
         if (weight<=0 || height<=0){throw new IllegalArgumentException();}
-        this.weight = (double)weight;
-        this.height = (double)height / 100;
+        this.weight = weight;
+        this.height = height / 100;
 
     }
 
