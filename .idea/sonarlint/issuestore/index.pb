@@ -17,3 +17,6 @@ P
  src/main/java/BMICalculator.java,6\7\67591228b3013d1598c817de1c9b80f76a344cf5
 G
 src/main/java/Main.java,e\4\e44a8606ce010ad9b89aafdfcee2ab49afbf6d10
+:
+
+README.txt,f\d\fda3484edf8db0684440157ce0b110d784d42704
