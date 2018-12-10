@@ -1,6 +1,16 @@
 plugins {
     id 'java'
 }
+jar {
+    manifest {
+        attributes "Main-Class": "Main"
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
 
 version '1.0-SNAPSHOT'
 
@@ -13,5 +23,7 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     testCompile group: 'pl.pragmatists', name: 'JUnitParams', version: '1.1.0'
+    compile group:'info.picocli', name:'picocli', version:'3.8.2'
+
 
 }

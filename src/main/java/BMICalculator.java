@@ -2,7 +2,6 @@ public class BMICalculator implements Calculator {
 
     private double weight;
     private double height;
-//    private double bmi;
 
     public BMICalculator(double weight, double height) {
         if (weight<=0 || height<=0){throw new IllegalArgumentException();}
@@ -10,12 +9,10 @@ public class BMICalculator implements Calculator {
         this.height = height / 100;
 
     }
-
     @Override
     public String calculate() {
         Double value = weight / (height * height);
         String value2 = String.format("%.1f",value);
-//        this.bmi = value;
         return value2.replaceAll(",",".");
     }
 
